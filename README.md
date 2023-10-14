@@ -17,7 +17,7 @@ For inference on the cause of this supercycle, this paper examines both number o
 
 # Methods
 ## For understanding the Supercycle
-### Band Pass (BP) Filter
+### Hodrick-Prescott (HP) Filter
 ### Principal Component Analysis (PCA) 
 
 ## For understanding the supercycle with respect to geopolitical events
