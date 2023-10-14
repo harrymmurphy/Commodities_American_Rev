@@ -7,7 +7,7 @@ Anne Bezanson's "Prices and Inflation during the American Revolution: Pennsylvan
 
 The dataset includes price levels and indices on beaf, bread, corn, flour, gunpowder, molasses, pitch, pork, rice, salt, rum, staves, sugar, tar, turpentine, wheat, whine, copper, silver, chocolate, coffee, corn, indigo, iron bar, and leather.
 
-For inference on the cause of this supercycle, this paper examines both number of death count during the Revolutionary War, as well as devaluation of local currencies because of changes in currency standards. Mark R. Beissinger of Princeton University compiled data violent episodes in the revolutionary war here (https://mbeissinger.scholar.princeton.edu/revolutionary-episodes-dataset). We use this dataset, as well as Grubb (2022) on coinage regime changes to test casuality. 
+For inference on the cause of this supercycle, this paper examines both number of death count during the Revolutionary War, as well as devaluation of local currencies because of changes in currency standards. For death figures on the Revolutionary War, I cleaned data from Peckham's "Toll of Independence" (1974). We use this dataset, as well as Grubb (2022) on coinage regime changes to test casuality. 
 
 # Analysis
 <img width="430" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/64c68896-9ac9-479e-b225-37143b75565b">
