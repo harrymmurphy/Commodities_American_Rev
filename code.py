@@ -1,15 +1,22 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import seaborn as sns
 import statsmodels.api as sm 
 import sklearn
 
-1720_1775 = "https://raw.githubusercontent.com/harrymmurphy/Commodities_American_Rev/main/1720-1775%20-%20Sheet1.csv"
-1770_1790 = "https://raw.githubusercontent.com/harrymmurphy/Commodities_American_Rev/main/1770-1790%20-%20Sheet1.csv"
+commodities= 'https://raw.githubusercontent.com/harrymmurphy/Commodities_American_Rev/main/1770-1790%2C%20price%20indices%20-%20Sheet1.csv'
+data = pd.read_csv(commodities)
 
-1770_1790 = pd.read_csv(1770-1790)
-1720_1775 = pd.read_csv(1720-1775)
-# Inspect DF
-print(1770-1790.head(5))
-print(1720-1775.head(5))
+# reorganize into timeseries data
+
+data.rename(columns = {'m':'MONTH', 'y':'YEAR'}, inplace = True)
+data['DATE'] = pd.to_datetime(data[['YEAR', 'MONTH']].assign(DAY=1))
+timeseries = data.drop(['MONTH', 'YEAR'], axis = 1)
+
+
+# Basic Plot to Visualize Prices
+sns.lineplot(data=timeseries.replace('nan', float('nan')).melt(id_vars=['DATE']),
+             x='DATE', y= "value", hue='variable')
+
