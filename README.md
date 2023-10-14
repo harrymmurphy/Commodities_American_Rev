@@ -16,6 +16,13 @@ For inference on the cause of this supercycle, this paper examines both number o
 
 
 # Methods
+## For understanding the Supercycle
+### BP Filter
+### PCA Analysis
+
+## For understanding the supercycle with respect to geopolitical events
+### Lagged Time Series Regression
+### Differences-in-Differences Analysis
 
 # Empirical Results
 
