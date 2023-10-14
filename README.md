@@ -10,6 +10,7 @@ The dataset includes price levels and indices on beaf, bread, corn, flour, gunpo
 For inference on the cause of this supercycle, this paper examines both number of death count during the Revolutionary War, as well as devaluation of local currencies because of changes in currency standards. For death figures on the Revolutionary War, I cleaned data from Peckham's "Toll of Independence" (1974). We use this dataset, as well as Grubb (2022) on coinage regime changes to test casuality. 
 
 # Analysis
-<img width="430" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/64c68896-9ac9-479e-b225-37143b75565b">
+<img width="430" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/64c68896-9ac9-479e-b225-37143b75565b"> <img width="668" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/9c97368c-4313-4158-b3a8-d6cac47a8cc8">
+
 
 
