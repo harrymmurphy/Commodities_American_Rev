@@ -20,3 +20,8 @@ timeseries = data.drop(['MONTH', 'YEAR'], axis = 1)
 sns.lineplot(data=timeseries.replace('nan', float('nan')).melt(id_vars=['DATE']),
              x='DATE', y= "value", hue='variable')
 
+# Hodrick-Prescott Filtering
+
+lambda_param = 100*(12)^2  
+trend, cyclical = sm.tsa.filters.hpfilter(timeseries['Wheat'], lamb=lambda_param)
+
