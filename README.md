@@ -22,7 +22,7 @@ For inference on the cause of this supercycle, this paper examines both number o
 
 ## For understanding the supercycle with respect to geopolitical events
 ### Lagged Time Series Regression
-### Differences-in-Differences Analysis
+### Differences-in-Differences (DiD) Analysis
 
 # Empirical Results
 
