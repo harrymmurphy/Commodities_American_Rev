@@ -1,5 +1,7 @@
 ###### *NOTE: This is a working paper*
-<h6>I am currently in the process of cleaning data, running analysis, and writing textual analysis on historical sources. I am hoping to blend a historical commentary on Merchant notebooks from 1770-1790 with deep statistical analysis on this robust dataset. Below are some initial models I have fit to the dataset, and particulalry take inspiration from the methods in this IMF paper titled "Super Cycles in Real Metals Prices?"(https://www.imf.org/external/pubs/ft/staffp/2008/04/cuddington.html). 
+<h6>I am currently in the process of cleaning data, running analysis, and writing textual analysis on historical sources. I am hoping to blend a historical commentary on Merchant notebooks from 1770-1790 with deep statistical analysis on this robust dataset. Below are some initial models I have fit to the dataset, and particulalry take inspiration from the methods in this IMF paper titled "Super Cycles in Real Metals Prices?
+  
+  (https://www.imf.org/external/pubs/ft/staffp/2008/04/cuddington.html). 
 
 There are several key components to this paper that are currently missing. Most of the models currently here will likely stay in the final product. The Hodrick-Prescott filter and PCA reduction both give insights into the nature of the supercycle, specifically volatility behavior around the Revolutionary War. I am currently investigating more modern time series analysis techniques in macrofinance, but these should do for now.
 
