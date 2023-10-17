@@ -1,9 +1,9 @@
-#### *NOTE: This is a working paper*
+###### *NOTE: This is a working paper*
 <h6>I am currently in the process of cleaning data, running analysis, and writing textual analysis on historical sources. I am hoping to blend a historical commentary on Merchant notebooks from 1770-1790 with deep statistical analysis on this robust dataset. Below are some initial models I have fit to the dataset, and particulalry take inspiration from the methods in this IMF paper titled "Super Cycles in Real Metals Prices?"(https://www.imf.org/external/pubs/ft/staffp/2008/04/cuddington.html). 
 
 There are several key components to this paper that are currently missing. Most of the models currently here will likely stay in the final product. The Hodrick-Prescott filter and PCA reduction both give insights into the nature of the supercycle, specifically volatility behavior around the Revolutionary War. I am currently investigating more modern time series analysis techniques in macrofinance, but these should do for now.
 
-The main components I am currently working on are the relationships between changes in colonial monetary regimes and commodities prices in this era. While I have the lagged regression with a proxy variable for strength of the War (a newly cleaned dataset on death counts per battle from Peckham (1974)), I am currently in the process of cleaning data from some early 20th century secondary sources with information on price indices for colonial coinage. There is A LOT of missing data as I am cleaning the coinage price indices, so I am currently looking into Machine Learning methods to fix this issue.
+The main components I am currently working on are the relationships between changes in colonial monetary regimes and commodities prices in this era. While I have the lagged regression with a proxy variable for strength of the War (a newly cleaned dataset on death counts per battle from Peckham (1974)), I am currently in the process of cleaning data from some early 20th century secondary sources with information on price indices for colonial coinage. There is A LOT of missing data as I am cleaning the coinage price indices, so I am currently looking into Machine Learning methods to fix this issue. 
 
 # Commodities, Supercycles, and the American Revolution
 Most supercycles identified in working commodities datasets from 1800-2023 show supercycles caused by warfare--including the Napleonic Wars, Civil War, World War I, World War II, and the Cold War (although it could be contested that the depreciation of the dollar upon the removal of the fixed-exchange rate caused this supercycle)--except the recent supercycle from 2005-2013. I identify a new supercycle from 1770-1790, and look to see if the American Revolution was causal for this supercycle, or if constant shifts in monetary regimes over this time period (and frequent re-defining of coinage standards) caused increases in commodities prices. 
@@ -54,12 +54,16 @@ A quick word on the distributions. Interestingly, despite high prices throughout
 
 ## For understanding the supercycle with respect to geopolitical events
 ### Lagged Time Series Regression
+
 ### Differences-in-Differences (DiD) Analysis
+Once the coinage data is finished, I intend on applying applied econometric techniques for causal inference. Looking to detect the relationship between deflation of colonial paper money and commodities prices, and whether it is more causal for the supercycle as compared to the war. 
 
 # Empirical Results
 
+This is a more "paper-y" part that I will not include on Github, but I intend on doing textual analysis on Merchant books to contextualize price shifts in commodities markets. While we can try to intuit market behavior using modern applied econometrics and statistics, these guys had a closer pulse to markets. 
+
 # Working Arguments
-
+N/A
 # Concluding Remarks
-
+N/A
 
