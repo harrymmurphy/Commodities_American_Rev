@@ -51,3 +51,18 @@ HP_timeseries = pd.concat([HP_df, date], axis=1).reindex(HP_df.index)
 # Graph the Hodrick_Prescott cyclical component to understand volatility in the short-term.
 sns.lineplot(data=HP_timeseries.replace('nan', float('nan')).melt(id_vars=['DATE']),
              x='DATE', y= "value", hue='variable')
+
+## Plots for Individual Commodities
+# Cocoa        
+Cocoa_df = HP_df['Chocolate']
+Cocoa_timeseries = pd.concat([Cocoa_df, date], axis=1).reindex(Cocoa_df.index)
+Cocoa_timeseries.plot(x='DATE', y='Chocolate')
+# Coffee
+Coffee_df = HP_df['Coffee']
+Coffee_timeseries = pd.concat([Coffee_df, date], axis=1).reindex(Coffee_df.index)
+Coffee_timeseries.plot(x='DATE', y='Coffee')
+# Iron
+Iron_df= HP_df['Iron Bar']
+Iron_timeseries = pd.concat([Iron_df, date], axis=1).reindex(Iron_df.index)
+Iron_timeseries.plot(x='DATE', y='Iron Bar')
+
