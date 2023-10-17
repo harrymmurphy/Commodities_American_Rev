@@ -66,3 +66,22 @@ Iron_df= HP_df['Iron Bar']
 Iron_timeseries = pd.concat([Iron_df, date], axis=1).reindex(Iron_df.index)
 Iron_timeseries.plot(x='DATE', y='Iron Bar')
 
+### PCA Analysis on Colonial Commodities Data
+## Begin with timeseries1 with removed time column
+
+# Must normalize the data before applying the fit method
+timeseries1_normalized=(timeseries1 - timeseries1.mean()) / timeseries1.std()
+pca = PCA(n_components=timeseries1.shape[1])
+pca.fit(timeseries1_normalized)
+
+# Reformat and view results
+loadings = pd.DataFrame(pca.components_.T,
+columns=['PC%s' % _ for _ in range(len(timeseries1_normalized.columns))],
+index=timeseries1.columns)
+print(loadings)
+
+plot.plot(pca.explained_variance_ratio_)
+plot.ylabel('Explained Variance')
+plot.xlabel('Components')
+plot.show()
+
