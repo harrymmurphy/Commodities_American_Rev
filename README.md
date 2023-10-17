@@ -18,7 +18,18 @@ For inference on the cause of this supercycle, this paper examines both number o
 # Methods
 ## For understanding the Supercycle
 ### Hodrick-Prescott (HP) Filter
-y_{t}\ =\tau _{t}\ +c_{t}\ +\epsilon _{t}\,
+Let Yt  for t = 1,2..T denote the logarithms of a time series variable. Yt is composed of a trend component, a cyclical component, and an error component, expressed as Yt = Ct + ERRORt. There is a trend component that can solve the following, given lamda > 0:
+
+<img width="360" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/a4164e0e-747e-42eb-9f61-48d05172ddb7">
+
+We use the Hodrick-Prescott filter to solve the "trend" component of this time series dataset. In the short term, we use this to approximate volatility in colonial commodities markets. The HP filter is given formally by:
+
+<img width="319" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/a725e57e-abc7-4a43-904a-9ac03fb50b9f">
+
+where L is the lag operator.
+
+Lamda dampens volatility as it increases. We use Harold Uhlig's suggestion for 100*(period)^2 given a 12-month annual periodization. 
+A quick word on the distributions. Interestingly, despite high prices throughout 1770-1790, there is certainly a volatility spike right around the revolutionary war. Vol during this period does not return for the remainder of the decade. 
 # All Commodities
 <img width="228" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2d240908-aa93-481e-959e-7a7c56a12e2a">
 
