@@ -18,6 +18,7 @@ For inference on the cause of this supercycle, this paper examines both number o
 # Methods
 ## For understanding the Supercycle
 ### Hodrick-Prescott (HP) Filter
+y_{t}\ =\tau _{t}\ +c_{t}\ +\epsilon _{t}\,
 # All Commodities
 <img width="228" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2d240908-aa93-481e-959e-7a7c56a12e2a">
 
