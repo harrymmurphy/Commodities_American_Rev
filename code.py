@@ -47,3 +47,7 @@ print(trend.head(100))
 
 date = timeseries['DATE']
 HP_timeseries = pd.concat([HP_df, date], axis=1).reindex(HP_df.index)
+
+# Graph the Hodrick_Prescott cyclical component to understand volatility in the short-term.
+sns.lineplot(data=HP_timeseries.replace('nan', float('nan')).melt(id_vars=['DATE']),
+             x='DATE', y= "value", hue='variable')
