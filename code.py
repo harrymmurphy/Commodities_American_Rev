@@ -68,8 +68,34 @@ Iron_timeseries.plot(x='DATE', y='Iron Bar')
 
 ### PCA Analysis on Colonial Commodities Data
 ## Begin with timeseries1 with removed time column
+# Also start with calculating change in PCs
 
-# Must normalize the data before applying the fit method
+cov_matrix = timeseries1.cov()
+
+# PCA (fit & transform)
+
+pca = PCA()
+pca.fit_transform(cov_matrix)
+
+# Explained variance
+
+per_var = np.round(pca.explained_variance_ratio_*100,decimals=2)
+labels = ['PC'+str(x) for x in range(1,len(per_var)+1)]
+raw_bars = pd.DataFrame(per_var,index=labels) # quick dataframe to enable easy plotting of % variance explained by the principal components
+
+
+# Check both raw_bars and cov_matrix for accuracy
+print(raw_bars.head(5)) # PC1 Takes up majortiy of variance
+print(cov_matrix.head(5))
+
+#c Reduce prinipal components to the first 3 which have significance.
+
+principal_components = raw_bars.iloc[0:3, :]
+raw_bars.to_csv('1770-1790_change_PCs.csv')
+
+# Now Calculating Raw PCs
+
+# You must normalize the data before applying the fit method
 timeseries1_normalized=(timeseries1 - timeseries1.mean()) / timeseries1.std()
 pca = PCA(n_components=timeseries1.shape[1])
 pca.fit(timeseries1_normalized)
@@ -78,10 +104,16 @@ pca.fit(timeseries1_normalized)
 loadings = pd.DataFrame(pca.components_.T,
 columns=['PC%s' % _ for _ in range(len(timeseries1_normalized.columns))],
 index=timeseries1.columns)
-print(loadings)
+date = timeseries['DATE']
 
-plot.plot(pca.explained_variance_ratio_)
-plot.ylabel('Explained Variance')
-plot.xlabel('Components')
-plot.show()
+
+# Keep Components Data in Seperate Excel File
+
+loadings.to_csv('1770-1790_PCA_components.csv')
+loadings.to_csv('C:/Users/Harry Murphy/OneDrive/Desktop/export.csv', index = None, header = True)
+
+
+
+
+
 
