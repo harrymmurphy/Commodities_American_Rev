@@ -64,10 +64,10 @@ Most of the variance is explained by PC1. PC1 is the eigenvector which explains 
 
 ## For understanding the supercycle with respect to geopolitical events
 ### Lagged Time Series Regression
-#### Exponential Soothing of Casuality Count
-Unsmoothed
-<img width="358" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/5c84ac65-7ad3-4d24-b8e4-5f10a3642268">
 
+Unsmooted
+
+<img width="676" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2f4acdb5-496b-46ac-8611-d88baa3ed34b">
 
 ### Differences-in-Differences (DiD) Analysis
 Once the coinage data is finished, I intend on applying applied econometric techniques for causal inference. Looking to detect the relationship between deflation of colonial paper money and commodities prices, and whether it is more causal for the supercycle as compared to the war. 
