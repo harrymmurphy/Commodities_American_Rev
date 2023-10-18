@@ -55,7 +55,7 @@ A quick word on the distributions. Interestingly, despite high prices throughout
 <img width="619" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2ab3048d-bd9a-4b61-8bbc-e45ad6b2fa18">
 
 #### Correlation Matrix (reduced)
-
+One thing to note: the each commodity is highly correlated with each other, with beef, iron, gunpowder, coffee, and tobacco having the highest correlations. Perhaps there is something to note that commodities with higher correlations maybe havea  closer relationship to the war?
 <img width="732" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/d4400685-8a16-4ac1-bb5d-f5d17745b4b1">
 
 
