@@ -70,7 +70,7 @@ Once the coinage data is finished, I intend on applying applied econometric tech
 This is a more "paper-y" part that I will not include on Github, but I intend on doing textual analysis on Merchant books to contextualize price shifts in commodities markets. While we can try to intuit market behavior using modern applied econometrics and statistics, these guys had a closer pulse to markets. 
 
 # Working Arguments
-N/A
+I am looking for stronger understanding of commodities cycles outside of Hodrick-Prescott. This is a really simple and outdated forecasting model. 
 # Concluding Remarks
 N/A
 
