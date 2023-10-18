@@ -63,18 +63,23 @@ Most of the variance is explained by PC1. PC1 is the eigenvector which explains 
 <img width="360" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/a434dd09-05a0-44f6-bf97-8b2fd72b2e6a">
 
 ## For understanding the supercycle with respect to geopolitical events
-### Lagged Time Series Regression
-
+### Lagged Time Series Cross Correlation Regression (Commodities Price ~ Death Counts)
+#### Visualizing the Data
 Unsmoothed
 
 <img width="676" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2f4acdb5-496b-46ac-8611-d88baa3ed34b">
 
 Death Count and Supercycle plotted on same timeseries.
 
-<img width="395" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/7b02cd6f-1996-4c99-9411-42ede1bf45d5">
+#### ADF
 
+First we perform an Augmented Dickey-Fuller test to check if the data is stationary. If the time series is characterised by a unit root process then the lagged level of the series will not give any prediction into the current level of the series. If the time series has no root unit, then it is stationary and is prone to mean reversion--here the lagged level is predictive of the curren level. Provided p < 0.05, the time series passes the ADF test. Both the 'Wine' time series and 'Deaths' Time series pass our ADF test, and we can proceed with cross correlation regression.
 
+#### Cross-Correlation Results for any lag 7 < n < 12 n on timeseries Death Count
 
+<img width="391" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/02ddd021-5fa9-41b7-984e-8bdf93e5fa30">
+
+This array composes cross correlation regression results (Commodities Price ~ Death Counts) between Commodities Price and Death Counts including lags for each month between 7 and 12 years. The first entry of the array is year 7 month 1. The second entry is year 7 month 2. The third entry is year 7 month 3... The final entry is year 11 month 12. The correlation coefficient rises to its highest point in year 9, for r^2 = 0.297, but falls for almost every consective month after. The results from this cross correlation are weak, and Death Counts are correlated minimally to the ditribution of Wine price indices from 1776-1781 (for death counts) and 1783-1788 (for wine price indices).
 
 ### Differences-in-Differences (DiD) Analysis
 Once the coinage data is finished, I intend on applying applied econometric techniques for causal inference. Looking to detect the relationship between deflation of colonial paper money and commodities prices, and whether it is more causal for the supercycle as compared to the war. 
