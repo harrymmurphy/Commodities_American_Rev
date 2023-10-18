@@ -123,6 +123,12 @@ deaths_df.rename(columns = {'m':'MONTH', 'y':'YEAR'}, inplace = True)
 deaths_df['DATE'] = pd.to_datetime(data[['YEAR', 'MONTH']].assign(DAY=1))
 deaths_timeseries = deaths_df.drop(['MONTH', 'YEAR'], axis = 1)
 
+timeseries1_reduced =timeseries1.iloc[0:164,:]
+cum_timeseries = pd.concat([timeseries1_reduced, deaths_timeseries], axis=1).reindex(timeseries1_reduced.index)
+
+sns.lineplot(data=cum_timeseries.replace('nan', float('nan')).melt(id_vars=['DATE']),
+             x='DATE', y= "value")
+print(cum_timeseries.head(250))
 # Visualize timeseries
 sns.lineplot(data=deaths_timeseries .replace('nan', float('nan')).melt(id_vars=['DATE']),
              x='DATE', y= "value", hue='variable')
