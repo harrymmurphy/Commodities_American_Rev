@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 import statsmodels.api as sm 
+from statsmodels.tsa.stattools import adfuller
 import sklearn
 
 commodities= 'https://raw.githubusercontent.com/harrymmurphy/Commodities_American_Rev/main/1770-1790%2C%20price%20indices%20-%20Sheet1.csv'
