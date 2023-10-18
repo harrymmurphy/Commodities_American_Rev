@@ -58,6 +58,9 @@ A quick word on the distributions. Interestingly, despite high prices throughout
 One thing to note: the each commodity is highly correlated with each other, with beef, iron, gunpowder, coffee, and tobacco having the highest correlations. Perhaps there is something to note that commodities with higher correlations maybe havea  closer relationship to the war?
 <img width="732" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/d4400685-8a16-4ac1-bb5d-f5d17745b4b1">
 
+### Percent Explained by PCs
+Most of the variance is explained by PC1. PC1 is the eigenvector which explains most of the information variance. In this case, since so much of the variance is left to PC1, there are not many sub-trends in the data to investigate. This is likely because I use monthly data.
+<img width="360" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/a434dd09-05a0-44f6-bf97-8b2fd72b2e6a">
 
 ## For understanding the supercycle with respect to geopolitical events
 ### Lagged Time Series Regression
