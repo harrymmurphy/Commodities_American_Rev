@@ -51,7 +51,13 @@ A quick word on the distributions. Interestingly, despite high prices throughout
 
 
 ### Principal Component Analysis (PCA) 
+#### Principal Components
 <img width="619" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2ab3048d-bd9a-4b61-8bbc-e45ad6b2fa18">
+
+#### Correlation Matrix (reduced)
+
+<img width="732" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/d4400685-8a16-4ac1-bb5d-f5d17745b4b1">
+
 
 ## For understanding the supercycle with respect to geopolitical events
 ### Lagged Time Series Regression
