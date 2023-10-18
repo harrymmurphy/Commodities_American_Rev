@@ -114,6 +114,19 @@ loadings.to_csv('C:/Users/Harry Murphy/OneDrive/Desktop/export.csv', index = Non
 
 ### Lagged Time Series Data for # Death and Commodities Price Indices
 
+### Death # Time Series Regression
+
+deaths= 'https://raw.githubusercontent.com/harrymmurphy/Commodities_American_Rev/main/Peckham%20Revolutionary%20War%20%23%20Death%20Timeseries%20-%20Sheet1.csv'
+deaths_df= pd.read_csv(deaths)
+
+deaths_df.rename(columns = {'m':'MONTH', 'y':'YEAR'}, inplace = True)
+deaths_df['DATE'] = pd.to_datetime(data[['YEAR', 'MONTH']].assign(DAY=1))
+deaths_timeseries = deaths_df.drop(['MONTH', 'YEAR'], axis = 1)
+
+# Visualize timeseries
+sns.lineplot(data=deaths_timeseries .replace('nan', float('nan')).melt(id_vars=['DATE']),
+             x='DATE', y= "value", hue='variable')
+
 
 ## Saving my savityzky_golay function for later. Don't use it here but wrote code for excercise
 def savitzky_golay(y, window_size, order, deriv=0, rate=1):   
