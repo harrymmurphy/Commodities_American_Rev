@@ -37,7 +37,7 @@ where L is the lag operator.
 
 Lamda dampens volatility as it increases. We use Harold Uhlig's suggestion for 100*(period)^2 given a 12-month annual periodization. 
 A quick word on the distributions. Interestingly, despite high prices throughout 1770-1790, there is certainly a volatility spike right around the revolutionary war. Vol during this period does not return for the remainder of the decade. 
-# All Commodities
+#### All Commodities (HP Trend Component Graphed)
 <img width="228" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2d240908-aa93-481e-959e-7a7c56a12e2a">
 
 ### Principal Component Analysis (PCA) 
