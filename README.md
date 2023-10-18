@@ -40,16 +40,6 @@ A quick word on the distributions. Interestingly, despite high prices throughout
 # All Commodities
 <img width="228" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2d240908-aa93-481e-959e-7a7c56a12e2a">
 
-# Chocolate
-<img width="361" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/cb0ebd5f-f75e-4046-9bd5-a73ce7d4e355">
-
-# Iron Bar
-<img width="346" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/4563f72b-719d-4a3c-a405-e91067918f1a">
-
-# Coffee
-<img width="347" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/4c41a597-c002-47f0-8836-66e13add44a2">
-
-
 ### Principal Component Analysis (PCA) 
 #### Principal Components
 <img width="619" alt="image" src="https://github.com/harrymmurphy/Commodities_American_Rev/assets/143562527/2ab3048d-bd9a-4b61-8bbc-e45ad6b2fa18">
