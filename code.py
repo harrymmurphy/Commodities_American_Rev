@@ -157,6 +157,59 @@ def savitzky_golay(y, window_size, order, deriv=0, rate=1):
     y = np.concatenate((firstvals, y, lastvals))
     return np.convolve( m[::-1], y, mode='valid')
 
+# ADF testing for stationary data
 
+test = cum_timeseries.iloc[:,24:25]
+
+
+from statsmodels.tsa.stattools import adfuller
+def adf_test(self):
+    dftest = adfuller(test, autolag='AIC')
+    result = pd.Series(dftest[0:4], index=['Test Statistic', 'P-Value', 'Lags Used', 'Number of Observations'])
+    for key,value in dftest[4].items():
+        result['Critical Value (%s)'%key] = value
+    return result
+    print(result)
+    
+adf_test(test)
+
+
+
+## Time Series Cross Correlation
+
+def autocorr(self, lag=1):
+    """
+    Lag-N autocorrelation
+
+    Parameters
+    ----------
+    lag : int, default 1
+        Number of lags to apply before performing autocorrelation.
+
+    Returns
+    -------
+    autocorr : float
+    """
+    return self.corr(self.shift(lag))
+
+def crosscorr(datax, datay, lag=0):
+    """ Lag-N cross correlation. 
+    Parameters
+    ----------
+    lag : int, default 0
+    datax, datay : pandas.Series objects of equal length
+
+    Returns
+    ----------
+    crosscorr : float
+    """
+    return datax.corr(datay.shift(lag))
+ 
+# Cross Correlation
+
+wine = cum_timeseries.iloc[:,24:25]
+death = cum_timeseries.iloc[:,25:26]
+reg = sm.tsa.stattools.ccf(wine, death, adjusted=False)
+print(reg[84:144]) # Show all coefficients for lags from 7 to 12 years
 
 
